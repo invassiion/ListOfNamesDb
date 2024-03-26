@@ -1,7 +1,10 @@
 package ru.invassiion.namesListDb.user.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import ru.invassiion.namesListDb.user.entity.UserEntity;
 
-public interface UsersRepository extends CrudRepository<UserEntity, Long> {
+@Repository
+public interface UsersRepository extends JpaRepository<UserEntity, Long> {
 }
